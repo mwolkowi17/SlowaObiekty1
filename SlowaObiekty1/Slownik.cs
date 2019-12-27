@@ -6,13 +6,16 @@ using System.Threading.Tasks;
 
 namespace SlowaObiekty1
 {
-    class Slownik
+    public class Slownik
     {
-        public List<Slowo> slownik=new List<Slowo>();
+        // List<Slowo> slownik=new List<Slowo>();
+        public List<Slowo> slownik = ZbiorDanych.slowaStatic; //statyczne źródło otwarte na dodawanie
+
         public int Punkty;
 
-       
-        public void SlownikDodaj( string slowoA, string slowoB)
+
+
+        public void SlownikDodaj(string slowoA, string slowoB)
         {
             //ID = id;
             //SlowoPolskie = slowoA;
@@ -24,14 +27,14 @@ namespace SlowaObiekty1
         {
             foreach (var n in slownik)
             {
-                Console.WriteLine(n.SlowoPolskie+" - "+n.SlowoAngielskie);
+                Console.WriteLine(n.SlowoPolskie + " - " + n.SlowoAngielskie);
             }
         }
         public void RandomSlowo()
         {
             var rand = new Random();
             int testnum = rand.Next(slownik.Count);
-            Console.WriteLine(slownik[testnum].SlowoPolskie+" - ");
+            Console.WriteLine(slownik[testnum].SlowoPolskie + " - ");
         }
 
         public Slowo RandomSlowoReturn()
@@ -41,7 +44,7 @@ namespace SlowaObiekty1
             return slownik[testnum];
         }
 
-        public void TestSlowoEng(Slowo slowotest,string testslowo)
+        public void TestSlowoEng(Slowo slowotest, string testslowo)
         {
             if (testslowo == slowotest.SlowoPolskie)
             {
@@ -52,7 +55,7 @@ namespace SlowaObiekty1
             {
                 Console.WriteLine("Zła odpowiedź. Prawidlowe tłumaczenie to " + slowotest.SlowoAngielskie);
             }
-            
+
         }
 
         public void WyswietlPunktacje()
@@ -64,7 +67,7 @@ namespace SlowaObiekty1
         {
             List<Slowo> robocze = new List<Slowo>();
 
-            foreach(var n in slownik)
+            foreach (var n in slownik)
             {
                 if (n.SlowoPolskie != slowopol)
                 {
@@ -74,11 +77,11 @@ namespace SlowaObiekty1
 
             slownik.Clear();
 
-            foreach(var m in robocze)
+            foreach (var m in robocze)
             {
                 slownik.Add(m);
             }
-            
+
         }
     }
 }

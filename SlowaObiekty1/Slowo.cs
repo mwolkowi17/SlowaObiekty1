@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SlowaObiekty1
 {
-    class Slowo
+    public class Slowo
     {
         public int ID { get; set; }
         public string SlowoPolskie { get; set; }

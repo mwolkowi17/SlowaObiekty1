@@ -59,5 +59,26 @@ namespace SlowaObiekty1
         {
             Console.WriteLine(Punkty);
         }
+
+        public void UsunSlowo(string slowopol) //Mogę utworzyć nową listę, która nie zawiera słowa starą usunąć i z powrotem ją wypełnić słowami
+        {
+            List<Slowo> robocze = new List<Slowo>();
+
+            foreach(var n in slownik)
+            {
+                if (n.SlowoPolskie != slowopol)
+                {
+                    robocze.Add(n);
+                }
+            }
+
+            slownik.Clear();
+
+            foreach(var m in robocze)
+            {
+                slownik.Add(m);
+            }
+            
+        }
     }
 }

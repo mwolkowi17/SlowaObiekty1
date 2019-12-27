@@ -17,6 +17,7 @@ namespace SlowaObiekty1
 
             moj.WypiszSlowa();
             moj.RandomSlowo();
+           
             Console.ReadKey();
 
         }

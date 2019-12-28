@@ -12,6 +12,7 @@ namespace SlowaObiekty1
         public List<Slowo> slownik = ZbiorDanych.slowaStatic; //statyczne źródło otwarte na dodawanie
 
         public int Punkty;
+        public Slowo Testowe;
 
 
 
@@ -41,7 +42,8 @@ namespace SlowaObiekty1
         {
             var rand = new Random();
             int testnum = rand.Next(slownik.Count);
-            return slownik[testnum];
+            Testowe = slownik[testnum];
+            return Testowe;
         }
 
         public void TestSlowoEng(Slowo slowotest, string testslowo)

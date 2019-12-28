@@ -47,7 +47,8 @@ namespace SlowaObiektyApp
         private void buttonSprawdz_Click(object sender, RoutedEventArgs e)
         {
            // moj.TestSlowoEngCheck(moj.RandomSlowoReturn(), textBoxTlum.Text);
-            boxSlowa.Text = moj.TestSlowoEngCheck(moj.RandomSlowoReturn(), textBoxTlum.Text); // tu narazie jest źle bo muszę wziąć słowo z listboxa
+            boxSlowa.Text = moj.TestSlowoEngCheck(moj.Testowe, textBoxTlum.Text); // tu narazie jest źle bo muszę wziąć słowo z listboxa
+            //stworzyć testowe pole z ze zmienną ze słownika - jako wynik RandomSlowo
         }
     }
 }

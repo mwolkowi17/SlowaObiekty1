@@ -32,16 +32,22 @@ namespace SlowaObiektyApp
 
         {
 
-            listBoxSlowa.Items.Clear();
+           
 
-            foreach(var n in moj.slownik)
+            gridSlowa.Items.Add(moj.RandomSlowoReturn());
+        }
 
-            {
+        private void buttonKlienci_Click(object sender, RoutedEventArgs e)
+        {
+            gridSlowa.Items.Clear();
+            gridSlowa.Items.Add(moj.RandomSlowoReturn());
+            boxSlowa.Text = "Sukces";
+        }
 
-                listBoxSlowa.Items.Add(n);
-
-            }
-
+        private void buttonSprawdz_Click(object sender, RoutedEventArgs e)
+        {
+           // moj.TestSlowoEngCheck(moj.RandomSlowoReturn(), textBoxTlum.Text);
+            boxSlowa.Text = moj.TestSlowoEngCheck(moj.RandomSlowoReturn(), textBoxTlum.Text); // tu narazie jest źle bo muszę wziąć słowo z listboxa
         }
     }
 }

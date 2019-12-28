@@ -58,6 +58,20 @@ namespace SlowaObiekty1
 
         }
 
+        public string TestSlowoEngCheck(Slowo slowotest, string testslowo)
+        {
+            if (testslowo == slowotest.SlowoAngielskie)
+            {
+                return "Dobrze";
+                Punkty++;
+            }
+            else
+            {
+                return "Źle";
+            }
+
+        }
+
         public void WyswietlPunktacje()
         {
             Console.WriteLine(Punkty);

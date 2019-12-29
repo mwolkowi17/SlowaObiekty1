@@ -12,6 +12,7 @@ namespace SlowaObiekty1
         public List<Slowo> slownik = ZbiorDanych.slowaStatic; //statyczne źródło otwarte na dodawanie
 
         public int Punkty;
+        public int Ilosc;
         public Slowo Testowe;
 
 
@@ -43,6 +44,7 @@ namespace SlowaObiekty1
             var rand = new Random();
             int testnum = rand.Next(slownik.Count);
             Testowe = slownik[testnum];
+            Ilosc++;
             return Testowe;
         }
 
@@ -64,8 +66,9 @@ namespace SlowaObiekty1
         {
             if (testslowo == slowotest.SlowoAngielskie)
             {
-                return "Dobrze";
                 Punkty++;
+                return "Dobrze";
+               
             }
             else
             {
@@ -77,6 +80,13 @@ namespace SlowaObiekty1
         public void WyswietlPunktacje()
         {
             Console.WriteLine(Punkty);
+        }
+
+        public string WyswietlPunktyValue()
+        {
+            
+            
+            return "Wynik="+Punkty.ToString()+"/"+Ilosc.ToString();
         }
 
         public void UsunSlowo(string slowopol) //Mogę utworzyć nową listę, która nie zawiera słowa starą usunąć i z powrotem ją wypełnić słowami

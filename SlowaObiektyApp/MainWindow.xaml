@@ -21,6 +21,9 @@
             <RowDefinition Height="Auto" MinHeight="32"/>
 
             <RowDefinition Height="Auto" MinHeight="25.6"/>
+            
+            <RowDefinition Height="Auto" MinHeight="32"/>
+            
 
 
 
@@ -29,6 +32,13 @@
 
         <TextBlock x:Name="boxSlowa" Grid.Row="0" Margin="10,0,9.6,10.2">
             Słownik
+        </TextBlock>
+
+        <TextBlock x:Name="boxWynik" Grid.Row="3" Grid.Column="0" Margin="10.2,9.6,9.6,0.2">
+            Wynik=0
+        </TextBlock>
+        <TextBlock x:Name="boxSlowaResult" Grid.Row="3" Grid.Column="1" Margin="10.2,9.6,9.6,0.2">
+            Poprawność tłumaczenia
         </TextBlock>
 
         <ListBox x:Name="gridSlowa" Margin="10,1,246.8,-4.6" Grid.Row="1" Grid.Column="0">

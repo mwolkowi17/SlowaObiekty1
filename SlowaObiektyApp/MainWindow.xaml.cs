@@ -50,6 +50,8 @@ namespace SlowaObiektyApp
             boxSlowaResult.Text = moj.TestSlowoEngCheck(moj.Testowe, textBoxTlum.Text); // już dobrze
             //stworzyć testowe pole z ze zmienną ze słownika - jako wynik RandomSlowo
             boxWynik.Text = moj.WyswietlPunktyValue();
+            gridSlowa.Items.Clear();
+            gridSlowa.Items.Add(moj.RandomSlowoReturn());
         }
     }
 }

@@ -15,6 +15,8 @@ namespace SlowaObiekty1
             slowaStatic.Add(new Slowo("stół", "table"));
             slowaStatic.Add(new Slowo("piłka", "ball"));
             slowaStatic.Add(new Slowo("lampa", "lamp"));
+            slowaStatic.Add(new Slowo("samochód", "car"));
+            slowaStatic.Add(new Slowo("ziemia", "earth"));
         }
     }
 }

@@ -41,11 +41,18 @@ namespace SlowaObiekty1
 
         public Slowo RandomSlowoReturn()
         {
+            if (Ilosc < 30) { 
             var rand = new Random();
             int testnum = rand.Next(slownik.Count);
             Testowe = slownik[testnum];
             Ilosc++;
             return Testowe;
+            }
+            else
+            {
+                Slowo OstSlowo = new Slowo("koniec przykładów","koniec przykladów");
+                return OstSlowo;
+            }
         }
 
         public void TestSlowoEng(Slowo slowotest, string testslowo)

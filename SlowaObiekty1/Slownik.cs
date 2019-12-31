@@ -79,7 +79,7 @@ namespace SlowaObiekty1
             }
             else
             {
-                return "Źle";
+                return "Źle," + " Prawidlowa odpowiedz to: "+Testowe.SlowoAngielskie;
             }
 
         }

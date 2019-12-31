@@ -52,6 +52,7 @@ namespace SlowaObiektyApp
             boxWynik.Text = moj.WyswietlPunktyValue();
             gridSlowa.Items.Clear();
             gridSlowa.Items.Add(moj.RandomSlowoReturn());
+           // boxPrawidlowe.Text = moj.Testowe.SlowoAngielskie;//nie działa dobrze
         }
     }
 }

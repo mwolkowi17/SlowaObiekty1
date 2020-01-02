@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlowaObiekty1", "SlowaObiek
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlowaObiektyApp", "SlowaObiektyApp\SlowaObiektyApp.csproj", "{56762EC8-39F1-49AE-B3BD-E4612A6E664A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlowaObiekty1Tests", "SlowaObiekty1Tests\SlowaObiekty1Tests.csproj", "{5A5FCBEC-B8E1-40AE-8577-3DA3AE65FB68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{56762EC8-39F1-49AE-B3BD-E4612A6E664A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56762EC8-39F1-49AE-B3BD-E4612A6E664A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56762EC8-39F1-49AE-B3BD-E4612A6E664A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A5FCBEC-B8E1-40AE-8577-3DA3AE65FB68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A5FCBEC-B8E1-40AE-8577-3DA3AE65FB68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A5FCBEC-B8E1-40AE-8577-3DA3AE65FB68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A5FCBEC-B8E1-40AE-8577-3DA3AE65FB68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
